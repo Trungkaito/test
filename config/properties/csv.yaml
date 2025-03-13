@@ -1,0 +1,73 @@
+schema_type:
+  label: Type Data
+  type: QComboBox
+  options: 
+  - Select
+  - Marker
+  - Zone
+  - WellLog
+  - WellPath
+  readonly: false
+
+record_id:
+  label: File Name
+  type: QLineEdit
+  readonly: true
+
+date_upload:
+  label: Date Upload
+  type: QDateTimeEdit
+  readonly: true
+
+fluid_type:
+  label: Fluid Type
+  type: QComboBox
+  options:
+  - Select
+  - Water
+  - Oil
+  - Gas
+  readonly: true
+
+# record_id1:
+#   label: File Name
+#   type: QLineEdit
+#   readonly: true
+
+# date_upload1:
+#   label: Date Upload
+#   type: QDateTimeEdit
+#   readonly: true
+
+# record_id2:
+#   label: File Name
+#   type: QLineEdit
+#   readonly: true
+
+# date_upload2:
+#   label: Date Upload
+#   type: QDateTimeEdit
+#   readonly: true
+
+# record_id3:
+#   label: File Name
+#   type: QLineEdit
+#   readonly: true
+
+# date_upload3:
+#   label: Date Upload
+#   type: QDateTimeEdit
+#   readonly: true
+
+# record_id4:
+#   label: File Name
+#   type: QLineEdit
+#   readonly: true
+
+# date_upload4:
+#   label: Date Upload
+#   type: QDateTimeEdit
+#   readonly: true
+
+
+
