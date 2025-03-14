@@ -17,7 +17,7 @@ def enable_drag_drop(widget):
     def dragLeaveEvent(event):
         if hasattr(widget, 'placeholder_label') and widget.placeholder_label:
             try:
-                widget.placeholder_label.setText("Kéo thả file CSV/TXT vào đây để bắt đầu")
+                widget.placeholder_label.setText("Kéo thả file vào đây để bắt đầu")
             except RuntimeError:
                 widget.placeholder_label = None
 
@@ -31,8 +31,6 @@ def enable_drag_drop(widget):
                 file_path = url.toLocalFile()
                 if hasattr(widget, 'handle_dropped_file'):
                     widget.handle_dropped_file(file_path)
-                    if hasattr(widget, '_update_file_list'):
-                        widget._update_file_list(file_path)
         else:
             event.ignore()
 
